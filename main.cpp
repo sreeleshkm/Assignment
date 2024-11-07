@@ -1,8 +1,9 @@
 #include <iostream>
 #include "rectangle.h"
 #include "student.h"
+#include "candidate.h"
 
-#define QUESTION 2
+#define QUESTION 3
 using namespace std;
 
 int main()
@@ -25,6 +26,12 @@ int main()
     totalMark = student.calculateMarks();
     student.display(totalMark);
 
+#elif (QUESTION == 3)
+    cout << "****** Candidate ******" << endl;
+    Candidate candidate;
+    candidate.enterDetails();
+    candidate.assignRemarks();
+    
 #endif
 
     cout << "Program end" << endl;
