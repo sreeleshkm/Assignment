@@ -1,8 +1,8 @@
 #include <iostream>
 #include "rectangle.h"
+#include "student.h"
 
-#define QUESTION 1
-
+#define QUESTION 2
 using namespace std;
 
 int main()
@@ -16,6 +16,14 @@ int main()
 
     area = rec.areaRec();
     cout << "Area = " << area << endl;
+
+#elif (QUESTION == 2)
+    cout << "****** Student ******" << endl;
+    Student student;
+    int totalMark = 0;
+    student.enterDetails();
+    totalMark = student.calculateMarks();
+    student.display(totalMark);
 
 #endif
 
