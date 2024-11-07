@@ -3,8 +3,9 @@
 #include "student.h"
 #include "candidate.h"
 #include "employee.h"
+#include "product.h"
 
-#define QUESTION 4
+#define QUESTION 5
 using namespace std;
 
 int main()
@@ -39,7 +40,13 @@ int main()
     Employee emp;
     emp.enterDetails();
     emp.display();
-    
+
+#elif (QUESTION == 5)
+    cout << "****** Product ******" << endl;
+
+    Product product("Banana", 11, 13);
+    product.printProduct();
+
 #endif
 
     cout << "Program end" << endl;
