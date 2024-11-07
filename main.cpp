@@ -2,8 +2,9 @@
 #include "rectangle.h"
 #include "student.h"
 #include "candidate.h"
+#include "employee.h"
 
-#define QUESTION 3
+#define QUESTION 4
 using namespace std;
 
 int main()
@@ -31,6 +32,13 @@ int main()
     Candidate candidate;
     candidate.enterDetails();
     candidate.assignRemarks();
+
+#elif (QUESTION == 4)
+    cout << "****** Employee ******" << endl;
+    
+    Employee emp;
+    emp.enterDetails();
+    emp.display();
     
 #endif
 
