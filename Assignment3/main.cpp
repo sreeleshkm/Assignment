@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Circle.h"
+#include "Bank.h"
 
 #define QUESTION 3
 using namespace std;
@@ -28,6 +29,24 @@ int main()
     ++bigCircle;
     cout << "\nBigger Circle Radius = " << bigCircle.getRadius() << endl;
     cout << "Circumference = " << bigCircle.circumference() << endl;
+
+#elif (QUESTION == 3)
+
+    Bank* bank = new Bank();
+    cout << "Bank balance = " << bank->getBalance() << endl;
+
+    BankA* bankA = new BankA();
+    bank = bankA;
+    cout << "Bank A balance = " << bank->getBalance() << endl;
+
+    BankB* bankB = new BankB();
+    bank = bankB;
+    cout << "Bank B balance = " << bank->getBalance() << endl;
+
+    BankC* bankC = new BankC();
+    bank = bankC;
+    cout << "Bank C balance = " << bank->getBalance() << endl;
+
 #endif
 
     cout << "\nProgram end" << endl;
