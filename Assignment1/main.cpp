@@ -5,7 +5,7 @@
 #include "employee.h"
 #include "product.h"
 
-#define QUESTION 5
+#define QUESTION 4
 using namespace std;
 
 int main()
